@@ -1,0 +1,27 @@
+<html>
+<head>  
+  <script>
+    function fn()
+	{
+		str1 = document.getElementById("text1");
+		str2 = document.getElementById("text2");
+		
+		st1 = str1.value; num1 = parseInt(st1);
+		st2 = str2.value; num2 = parseInt(st2);
+		
+		res = num1 - num2;
+		
+		str3 = document.getElementById("result");
+		str3.value = res;
+	}
+	
+  </script>
+</head>
+<body>
+  <input type="text" id = "text1" placeholder="Number 1"/>
+  <input type="text" id = "text2" placeholder="Number 2"/>
+  <p><input type="button" value = "Press to proceed" onClick = "fn()"/></p>
+  <br><label for = "result"> RESULT: </label></br>
+  <br><input type="text" id = "result" readonly = "readonly"/></br>
+</body>
+</html>

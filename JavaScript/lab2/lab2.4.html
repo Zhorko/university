@@ -1,0 +1,15 @@
+<body>
+<script>
+	s=prompt("ENTER STRING:"); L_s=s.length;
+	ch=prompt("ENTER CHARACTER:"); L_ch=ch.length;
+	if (L_ch > 1) 
+	temp = 0;
+	for (i = 0; i < L_s; i++)
+	{
+		c=s.charAt(i);
+		if (c == ch) temp++;
+	}
+	if (L_ch < 1) alert(temp); else alert("TOO LONG CHARACTER")
+	
+</script>
+</body>

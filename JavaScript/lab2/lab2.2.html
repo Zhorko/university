@@ -1,0 +1,21 @@
+<html>
+<head>  
+</head>
+<body>
+  <script type="text/javascript">
+    var arr = new Array();
+    var c=0;
+    var str1="";
+    var str2="";
+    for(var i=0;i<10;i++){
+      c = Math.floor(Math.random()*10+10);
+      arr[i]=c;
+      if(arr[i]%5==0){
+        str1+=i+" ";
+      }
+      str2+=arr[i]+" ";
+    }
+    alert(str2+"\n"+str1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿h1 {font-family: Arial;
+	font-size: 36pt;
+	color: red;
+	font-style: italic;
+	text-align:	center}
+	
+h2 	{font-family: Arial;
+	font-size: 24pt;
+	color: green;
+	font-style: italic}
+	
+p	{font-family: Times New Roman;
+	font-size: 18pt;
+	color: brown;
+	text-align: justify;
+	line-height: 1.5em;
+	text-indent: 1.5cm}
+
+span {color: blue;
+     font-style: bold;
+	 text-decoration: underline}
+
+.h2_text 	{text-align:center}	 
+.h2_link 	{text-align:left}
+
+a.h2_link:link 		{color:brown;
+					text-decoration:none}
+a.h2_link:visited 	{color:blue;
+					text-decoration:none}
+a.h2_link:hover 	{color:red;
+					 text-decoration: underline}
+
+.p_1_3 {font-style: italic;
+		 font-size: 12pt}
+.p_2_4 {font-style: normal;
+		 font-size: 18pt}
+		 
+#orange_dashed 	{border-width: 8pt;
+				border-color: orange;
+				border-style: dashed;
+				margin-top: 1cm;
+				margin-right: 1cm;
+				margin-left: 1cm;
+				padding: 1em}
+
+#blue_stripes	{border-width: 8pt;
+				border-color: #1A0083;
+				border-style: double;
+				margin-top: 1cm;
+				margin-right: 9em;
+				margin-left: 7em;
+				padding: 1em;
+				text-align: center}
+
+#red_outset		{border-width: 8pt;
+				border-color: red;
+				border-style: outset;
+				margin-top: 1cm;
+				margin-right: 9em;
+				margin-left: 7em;
+				padding: 1em;
+				text-align: center}
+
+#blue_stripes2	{border-width: 8pt;
+				border-color: #1A0083;
+				border-style: double;
+				margin-top: 1cm;
+				margin-right: 2em;
+				margin-left: 3em;
+				padding: 1em;
+				text-align: center}
+
+#grey_groove 	{border-width: 20pt;
+				border-color: grey;
+				border-style: groove;
+				margin-top: 1cm;
+				margin-right: 7em;
+				margin-left: 5em;
+				padding: 1em;
+				text-align: center}

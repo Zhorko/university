@@ -1,0 +1,73 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+<style type="text/css">
+button{
+	height:50px; width:200px;
+	background:violet; color:white;
+	border:outset 5px magenta;
+}
+button.hover{
+	background:yellow; color:navy;
+}
+p{background:yellow; margin:4px;}
+div{color:black; font-size:18px; border:ridge 2px navy; background:orange; width:80%;padding:20px;}
+button{display:block; margin:3px; color:red; width:200px;}
+div.Button{color:red; border:2px solid blue; width:200px;margin:3px; text-align:center;}
+</style>
+<script type="text/javascript">
+$(document).ready(
+	function(){
+		$("#D1").html("<h1>Первый созданный заголовок страницы</h1> Дальше идёт какой-то текст ...");
+		$("div h1").append("!!!").css("color","red");
+		$("#D2").html("<h2>Второй созданный заголовок страницы</h2> Дальше идёт какой-то текст ...");
+		$("div h2").append("!!!").css("color","blue");
+		$("#D3").html("<h3>Третий созданный заголовок страницы</h3> Дальше идёт какой-то текст ...");
+		$("div h3").append("!!!").css("color","green");
+		$("#B").toggle(
+			function(){
+				$("p").slideUp("slow");
+			},
+			function(){
+				$("p").slideDown("slow");
+			}
+		);
+		$("#D").toggle(
+			function(){
+				$("div").slideUp("slow");
+			},
+			function(){
+				$("div").slideDown("slow");
+			}
+		);
+		$("#C").click(
+		    function(){
+				$("p").wrap("<span></span>").prepend("<img src=bird2.gif>").css("background-color","lime");
+				$(this).css("background-color","pink");
+		}
+		);
+		$("#A").click(function(){ location.href = '2.html'; });
+		$("button").hover(
+			function(){ 
+				$(this).addClass("hover"); }, 
+			function(){ 
+				$(this).removeClass("hover"); }
+		);
+	}
+);
+</script>
+</head>
+<body>
+<button id="A">На следующую</button>
+<button id="B">Свернуть/Развернуть абзацы</button>
+<button id="C">Абзацы загнать в span</button>
+<button id="D">Свернуть/Развернуть разделы</button>
+<div id="D1"></div>
+<div id="D2"></div>
+<div id="D3"></div>
+<p>первый абзац статьи первый абзац статьи</p>
+<p>второй абзац статьи второй абзац статьи</p>
+<p>третий абзац статьи третий абзац статьи</p>
+<p>четвёртый абзац статьи четвёртый абзац статьи</p>
+</body>
+</html>

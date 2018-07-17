@@ -1,0 +1,13 @@
+<body>
+<script>
+	var str=prompt("X:", "0");
+	x=parseInt(str, 10);
+	var str=prompt("Y:", "0");
+	y=parseInt(str, 10);
+	
+	z1=(x*y)/(x-y);
+	z2=Math.sqrt(Math.abs(Math.pow(y, 3)-x));
+	z=z1+z2;
+	alert("RESULT: " + z);
+</script>
+</body>

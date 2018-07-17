@@ -1,0 +1,16 @@
+<body>
+<script>
+	var str=prompt("X:", "0");
+	x=parseInt(str, 10);
+	var temp = 0;
+	
+	for(var counter = 0; counter < x; counter++)
+	{
+		if (x % counter == 0) 
+		{
+			if (counter % 3 == 0) temp++;
+		}
+	}
+	alert("КОЛ-ВО ДЕЛИТЕЛЕЙ: " + temp);
+</script>
+</body>

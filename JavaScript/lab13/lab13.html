@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("img").toggle(function(){$(this).attr("src","gifki_s_sobakami_15.gif")},function(){$(this).attr("src","57463_683eccf3_181726_106b.gif");});
+	$("#but1").click(function(){$("img").hide();});
+	$("#but2").click(function(){$("img").show();});
+	$("#but3").click(function(){
+		$("img").animate({
+		width:"5%",
+		opacity:0.1}, 1500);
+	});
+});
+</script>
+</head>
+<body>
+<img src="57463_683eccf3_181726_106b.gif">
+<button id="but1">Скрыть</button>
+<button id="but2">Показать</button>
+<button id="but3">Анимация</button>
+</body>
+</html>

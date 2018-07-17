@@ -1,0 +1,42 @@
+<html>
+<head>  
+  <script>
+    function rub()
+	{
+		st=prompt('Введите номер дня недели'); n=parseInt(st);
+		g1='<head><style>body{text-align:';
+		g3='}h3{color:';
+		g5='}</style></head>';
+		s1='<body><h3>';
+		s3='</h3></body>';
+		if (n >= 1 && n <= 5)
+		{
+			s2='робочий день'; g2 = 'start'; g4='navy'
+		}
+		else
+		{
+			if (n == 6 || n == 7)
+			{
+				s2='Выходной день'; g2 = 'center';g4='grey'
+			}
+			else
+			{
+				s2='Ошибка'; g2='end'; g4='grey'
+			}
+		}
+		g=g1+g2+g3+g4+g5;
+		s=s1+s2+s3;
+		w=window.open("", "", "width=720, height=480");
+		w.document.open();
+		w.document.write(g);
+		w.document.write(s);
+		w.document.close();
+	}
+	
+  </script>
+</head>
+<body>
+  <input type="button" value="START" onclick="rub()">
+  <input type="button" value="CLOSE" onclick="w.close()">
+</body>
+</html>

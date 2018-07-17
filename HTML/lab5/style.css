@@ -1,0 +1,36 @@
+﻿h1 {font-family: Arial;
+	font-size: 36pt;
+	color: red;
+	font-style: italic;
+	text-align:	center}
+	
+h2 	{font-family: Arial;
+	font-size: 24pt;
+	color: green;
+	font-style: italic}
+	
+p	{font-family: Times New Roman;
+	font-size: 18pt;
+	color: brown;
+	text-align: justify;
+	line-height: 1.5em;
+	text-indent: 1.5cm}
+
+span {color: blue;
+     font-style: bold;
+	 text-decoration: underline}
+
+.h2_text 	{text-align:center}	 
+.h2_link 	{text-align:left}
+
+a.h2_link:link 		{color:brown;
+					text-decoration:none}
+a.h2_link:visited 	{color:blue;
+					text-decoration:none}
+a.h2_link:hover 	{color:red;
+					 text-decoration: underline}
+
+.p_1_3 {font-style: italic;
+		 font-size: 12pt}
+.p_2_4 {font-style: normal;
+		 font-size: 18pt}

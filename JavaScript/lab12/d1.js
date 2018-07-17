@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$('tr:odd').addClass('s1');
+	$('tr:even').addClass('s2');
+	$('tr').click(function(){
+		if($(this).hasClass('s1'))
+		{
+			$(this).toggleClass('s3');
+		}
+		else
+		{
+			$(this).removeClass('s2').addClass('s4');
+		}
+	});
+});
